@@ -1,9 +1,8 @@
-/* --- Global Navbar Styles --- */
 .navbar {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #2e3b2e; /* Your Dark Olive Green */
+    background-color: #2e3b2e;
     color: #ffffff;
     display: flex;
     justify-content: space-between; 
@@ -23,8 +22,8 @@
 
 .navbar-links {
     display: flex;
-    /* Use a smaller gap for desktop to prevent overflow */
-    gap: 40px; 
+    gap: 30px; 
+    align-items: center;
 }
 
 .nav-item {
@@ -33,50 +32,43 @@
     font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease;
-    white-space: nowrap; /* Prevents single words from breaking */
+    white-space: nowrap;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-item:hover {
-    color: #d4af37; /* Gold hover */
+    color: #d4af37;
     transform: translateY(-1px);
 }
 
-/* --- Responsive Media Query for Tablets (992px and down) --- */
-@media (max-width: 992px) {
-    .navbar {
-        padding: 15px 30px;
-    }
-    .navbar-links {
-        gap: 20px;
-    }
-}
-
-/* --- THE MOBILE FIX: Responsive Media Query for Phones (768px and down) --- */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stacks logo above the links */
-        padding: 15px 10px;
-        gap: 15px; /* Adds space between logo and the link row */
+        flex-direction: column; 
+        padding: 12px 10px;
+        gap: 15px; 
     }
 
     .navbar-logo {
         font-size: 1.2rem;
+        text-align: center;
     }
 
     .navbar-links {
-        gap: 12px; /* Tight gap to fit all 4 links horizontally */
         width: 100%;
-        justify-content: center;
-        flex-wrap: wrap; /* Safety: wraps links if the screen is super narrow */
-    }
+        justify-content: center; 
+        gap: 15px; 
+        flex-wrap: nowrap;
 
     .nav-item {
-        font-size: 0.85rem; /* Smaller text specifically for mobile */
+        font-size: 0.85rem;
+        padding: 4px 0;
     }
 
     .help-link {
-        border: 1px solid #d4af37; /* Optional: makes the help link stand out on mobile */
-        padding: 4px 8px;
-        border-radius: 4px;
+        border: none !important; 
+        outline: none !important;
+        background: none !important; 
+        color: #d4af37 !important; 
     }
 }
