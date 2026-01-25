@@ -14,7 +14,6 @@ import Testimonials from "./components/Testimonials";
 import EnquiryForm from "./components/EnquiryForm";
 import Footer from "./components/Footer";
 
-// MODULE PAGES (Lazy Loaded)
 const PolicyDesign = lazy(() => import("./pages/modules/PolicyDesign"));
 const SupervisorTraining = lazy(() => import("./pages/modules/SupervisorTraining"));
 const ICTraining = lazy(() => import("./pages/modules/ICTraining"));
