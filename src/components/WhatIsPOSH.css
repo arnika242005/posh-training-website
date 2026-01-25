@@ -1,0 +1,79 @@
+.what-is-posh {
+    padding: 80px 0;
+    background: #ffffff;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Container */
+  .container {
+    width: 85%;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  /* Heading */
+  .posh-heading {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .posh-description {
+    font-size: 1.1rem;
+    color: #444;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+  }
+  
+  .posh-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 65px;
+  }
+  
+  /* Card */
+  .posh-card {
+    background: #2F3E2C;
+    padding: 25px 30px;
+    border-radius: 14px;
+    border-left: 6px solid #D4A373;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.1);
+  }
+  
+  /* Card Title */
+  .posh-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    color: #D4A373;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  /* Card Text */
+  .posh-card p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover → Card Standout Effect */
+  .posh-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    border-left-color: #D4A373; /* brighter contrast */
+  }
+  
+  /* Hover → Title Highlight */
+  .posh-card h3:hover {
+    color: #120404;
+    text-shadow: 0px 1px 4px rgba(255, 255, 255, 0.45);
+  }
+  
+  /* Hover → Text Highlight */
+  .posh-card p:hover {
+    color: #D4A373;
+  }  

@@ -1,0 +1,29 @@
+.audit-page {
+    padding: 60px 25px;
+    max-width: 950px;
+    margin: auto;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .audit-page h1 {
+    font-size: 33px;
+    color: #1e3c50;
+    margin-bottom: 15px;
+  }
+  
+  .audit-page p,
+  .audit-page li {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .audit-page ul {
+    margin-top: 20px;
+    padding-left: 25px;
+  }
+  
+  .audit-page li {
+    margin-bottom: 10px;
+  }
+  

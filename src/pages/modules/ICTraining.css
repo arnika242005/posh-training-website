@@ -1,0 +1,115 @@
+/* =========================
+   IC TRAINING PAGE RESET
+========================= */
+
+.ic-page {
+  font-family: "Inter", sans-serif;
+  color: #1e3c2f;
+  /* CHANGED: Set padding-top to 0 to remove the top white gap */
+  margin-top: 0;
+  padding-top: 0; 
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Ensure no default browser margins on the hero section */
+.module-image-hero {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0; /* Forced zero margin to snap to top */
+  margin-bottom: 60px;
+}
+
+/* =========================
+ IMAGE HERO SECTION
+========================= */
+
+.module-image-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* Removes tiny bottom alignment gap */
+}
+
+/* HERO OVERLAY CONTENT */
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1), /* Slightly lighter at top */
+      rgba(0, 0, 0, 0.7)
+  );
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* If your navbar is sticky/transparent, increase top padding here instead */
+  padding: 80px 60px 60px 60px; 
+  z-index: 2;
+}
+
+.image-overlay h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* ... (Remaining styles stay the same) ... */
+
+.module-meta span {
+  background: rgba(255, 255, 255, 0.15); /* More transparent for modern look */
+  backdrop-filter: blur(8px);
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+/* =========================
+ MAIN CONTENT AREA
+========================= */
+
+.module-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* CONTENT CARDS */
+.content-card {
+  background: #ffffff; /* Pure white looks better against greyish body */
+  border: 1.5px solid #e0e6e3; /* Softer border than dark green */
+  border-radius: 20px;
+  padding: 35px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.content-card:hover {
+  border-color: #1e3c2f; /* Dark green appears on hover */
+  box-shadow: 0 15px 35px rgba(30, 60, 47, 0.08);
+  transform: translateY(-5px);
+}
+
+.content-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1e3c2f;
+  font-weight: 700;
+}
+
+/* ... (Keep the rest of your CTA and Mobile styles) ... */

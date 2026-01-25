@@ -1,30 +1,29 @@
-// src/components/HeroSection.js
-
 import React from 'react';
 import './HeroSection.css';
 
 const HeroSection = () => {
     return (
-        <div className="hero-container">
+        <section className="hero-section">
             <div className="hero-content">
-                <h1 className="hero-headline">
-                    Expert POSH Training for Legal Compliance in Mumbai & Bangalore
+                <h1 className="hero-title">
+                    Expert POSH Training & Legal Compliance Services
                 </h1>
-                <p className="hero-subheading">
-                    Empower your team and ensure a safe, respectful, and legally compliant workplace. Book your customized session today.
+                <p className="hero-description">
+                    Empower your workplace with certified POSH awareness. We provide 
+                    Internal Committee (IC) training and compliance audits in Mumbai, 
+                    Bangalore, and across India.
                 </p>
                 
-                {/* This uses the global cta-button class from index.css */}
-                <button className="cta-button">
-                    Secure Your Training Slot
-                </button>
+                <div className="hero-actions">
+                    <a href="#contact" className="hero-btn">
+                        Secure Your Training Slot
+                    </a>
+                </div>
             </div>
             
-            {/* Visual area for the image/illustration */}
-            <div className="hero-image-placeholder">
-                
-            </div>
-        </div>
+            {/* Kept simple to avoid LCP delay; add an <img> here with width/height later */}
+            <div className="hero-image-placeholder"></div>
+        </section>
     );
 };
 

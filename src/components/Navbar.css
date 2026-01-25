@@ -1,0 +1,56 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-primary-dark); /* Dark Olive Green */
+    color: var(--color-white);
+    
+    /* THE FIX: Use space-between to push logo left and links right */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+    /* Adjusted padding for balanced side spacing */
+    padding: 15px 60px; 
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Ensures padding doesn't cause overflow */
+    box-sizing: border-box; 
+}
+
+.navbar-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-white);
+    white-space: nowrap;
+}
+
+.navbar-links {
+    display: flex;
+    /* Controls spacing between individual links */
+    gap: 150px; 
+}
+
+.nav-item {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    color: var(--color-accent-cta); /* Gold hover */
+    transform: translateY(-1px);
+}
+
+/* RESPONSIVE: Prevent crowding on smaller screens */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    .navbar-links {
+        gap: 20px;
+    }
+}

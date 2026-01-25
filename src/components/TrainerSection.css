@@ -1,0 +1,117 @@
+.trainer-section {
+    padding: 80px 20px; /* Increased padding for better vertical balance */
+    background: #f9f9f9; /* ✅ Matches the Testimonials background color */
+    font-family: "Inter", sans-serif;
+    margin: 0; /* Ensures no gaps between sections */
+  }
+  
+  /* MAIN HEADING */
+  .trainer-main-heading {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 800; /* Made slightly bolder to match your screenshots */
+    color: #1e3c2f;
+    margin-bottom: 50px; /* Increased space before the content */
+  }
+  
+  /* LAYOUT */
+  .trainer-container {
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .trainer-content {
+    display: flex;
+    gap: 60px; /* Increased gap for a cleaner look */
+    align-items: flex-start;
+  }
+  
+  /* IMAGE */
+  .trainer-image-wrapper {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .trainer-image {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 20px;
+    border: 3px solid #1e3c2f;
+    background: #ffffff; /* White background behind the photo for a "frame" effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow to pop against light background */
+  }
+  
+  .trainer-name {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #c79a63; /* The signature gold color from your screenshot */
+  }
+  
+  /* RIGHT CONTENT */
+  .trainer-text {
+    flex: 2;
+    font-size: 18px; /* Slightly larger for readability */
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .trainer-text p {
+    margin-bottom: 20px;
+  }
+
+  .trainer-text strong {
+    color: #1e3c2f; /* Dark green for emphasized text */
+  }
+  
+  /* CREDENTIAL BADGES */
+  .trainer-badges {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .trainer-badge {
+    background: #fdf6ec; /* Very light cream background for the pill tags */
+    color: #1e3c2f;
+    border: 1px solid #e9dcc9;
+    padding: 8px 18px;
+    border-radius: 50px; /* Fully rounded pills */
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .trainer-badge:hover {
+    background: #c79a63;
+    color: #ffffff;
+    border-color: #c79a63;
+    transform: translateY(-3px);
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .trainer-section {
+        padding: 60px 20px;
+    }
+
+    .trainer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    .trainer-text {
+      text-align: center; /* Center text on mobile */
+    }
+  
+    .trainer-badges {
+      justify-content: center;
+    }
+  
+    .trainer-main-heading {
+      font-size: 36px;
+    }
+  }

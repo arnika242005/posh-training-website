@@ -1,18 +1,35 @@
 .App {
   text-align: center;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* Fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Logo (default CRA – kept safe) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Animation preference */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+/* Header (not actively used, kept safe) */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +41,12 @@
   color: white;
 }
 
+/* Links */
 .App-link {
   color: #61dafb;
 }
 
+/* Logo animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

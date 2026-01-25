@@ -1,0 +1,100 @@
+.testimonials-section {
+    /* Large bottom padding to keep 'Enquire' section hidden when viewing testimonials */
+    padding: 100px 20px 200px 20px; 
+    min-height: 100vh; 
+    background: #f7faf8;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+.testimonials-container {
+    max-width: 1200px; /* Slightly wider for better grid distribution */
+    margin: auto;
+}
+
+/* HEADINGS */
+.testimonials-heading {
+    text-align: center;
+    font-size: 42px;
+    color: #1e3c2f;
+    margin-bottom: 10px;
+}
+
+.testimonials-subheading {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 60px; /* Increased space before the grid starts */
+}
+
+/* GRID - THE SPACE BETWEEN BOXES */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Increased gap to 50px for a more organized, airy feel */
+    gap: 50px; 
+}
+
+/* CARD - INDIVIDUAL BOXES */
+.testimonial-card {
+    background: #ffffff;
+    border: 1.5px solid #2f3e2c; /* Slightly thinner border for elegance */
+    border-radius: 20px;
+    /* Increased internal padding to 40px so text doesn't feel cramped */
+    padding: 40px; 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px); /* More pronounced lift on hover */
+    box-shadow: 0 20px 40px rgba(30, 60, 47, 0.08);
+}
+
+/* TEXT */
+.testimonial-text {
+    font-size: 16.5px;
+    line-height: 1.8; /* Increased line height for better readability */
+    color: #444;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* NAME */
+.testimonial-name {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1e3c2f;
+    margin-bottom: 4px;
+}
+
+/* ORGANIZATION */
+.testimonial-org {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 0.5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .testimonials-grid {
+        gap: 30px; /* Medium gap for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .testimonials-heading {
+        font-size: 34px;
+    }
+    
+    .testimonials-section {
+        padding-bottom: 100px;
+    }
+}

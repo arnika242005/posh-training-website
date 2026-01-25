@@ -1,0 +1,64 @@
+.carousel-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.posh-carousel {
+    width: 95%;
+    /* Use 75vh to 80vh so it fits laptop screens perfectly */
+    height: 75vh; 
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    /* These properties ensure your caro images fill the box */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.slide-content {
+    background: rgba(172, 208, 192, 0.7); /* Brand green with transparency */
+    padding: 35px 50px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px); /* Modern frosted glass effect */
+    max-width: 700px;
+}
+
+.slide h2 {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.slide p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* FIX: Moves the 3 dots up so they are inside the green box */
+.swiper-pagination {
+    bottom: 25px !important;
+}
+
+.swiper-pagination-bullet {
+    background: #ffffff !important;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 25px; /* Makes the active dot look like a pill */
+    border-radius: 5px;
+}

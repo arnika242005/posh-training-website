@@ -1,0 +1,103 @@
+/* --- SCROLL ANIMATION --- */
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.2s ease-out; /* Increased from 0.12s for a smoother feel */
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- REVISED STYLING --- */
+
+.why-choose-us {
+  background: #ffffff;
+  /* Changed top padding from 0px to 60px to move content down slightly */
+  padding: 60px 0 80px; 
+  /* Added margin-top to ensure it doesn't hug the previous section */
+  margin-top: 20px; 
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.choose-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.choose-subtitle {
+  color: #082520;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.choose-heading {
+  font-size: 2.8rem; /* Slightly larger to match your screenshot style */
+  font-weight: 800;
+  color: #1e3c2f; /* Matching your brand green from the modules */
+  margin-bottom: 50px;
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 60px; /* Increased vertical gap between rows */
+  margin-top: 40px;
+}
+
+.choose-item {
+  text-align: center;
+}
+
+.number {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2F3E2C;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 15px; /* Added space below the number line */
+}
+
+.number::before,
+.number::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1; /* Makes lines adapt better to container width */
+  max-width: 100px; /* Prevents lines from being too long */
+  background: #c7d1e2;
+}
+
+.choose-item h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #1e3c2f;
+}
+
+.choose-item p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #bc8e5c; /* Slightly deeper gold for better readability on white */
+  line-height: 1.6;
+  max-width: 280px; /* Keeps text chunks clean and balanced */
+  margin: 0 auto;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+  .choose-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .why-choose-us {
+      padding: 40px 0;
+  }
+}

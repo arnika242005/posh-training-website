@@ -1,0 +1,140 @@
+/* =========================
+   E-LEARNING PAGE RESET
+========================= */
+.elearning-page {
+    font-family: "Inter", sans-serif;
+    color: #1e3c2f;
+    background-color: #ffffff;
+    margin-top: 0;
+}
+
+/* =========================
+   HERO SECTION (Policy Style)
+========================= */
+.module-image-hero {
+    position: relative;
+    height: 500px; /* Matching the large look */
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.module-image-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+}
+
+.image-overlay h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.image-overlay p {
+    font-size: 20px;
+    max-width: 750px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* META TAGS */
+.module-meta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.module-meta span {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+.module-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px 100px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.content-card {
+    background: #fdfdfd;
+    border: 1.5px solid #1e3c2f;
+    border-radius: 20px;
+    padding: 35px;
+    transition: 0.3s ease;
+}
+
+.content-card:hover {
+    box-shadow: 0 10px 30px rgba(30, 60, 47, 0.1);
+    transform: translateY(-5px);
+}
+
+.content-card.full-width {
+    grid-column: span 2;
+}
+
+.content-card h2 {
+    font-size: 24px;
+    color: #1e3c2f;
+    margin-bottom: 20px;
+}
+
+.content-card ul {
+    padding-left: 20px;
+}
+
+.content-card li {
+    margin-bottom: 12px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* CTA */
+.module-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.module-cta button {
+    background: #1e3c2f;
+    color: white;
+    padding: 18px 45px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .module-image-hero { height: 400px; }
+    .content-grid { grid-template-columns: 1fr; }
+    .content-card.full-width { grid-column: span 1; }
+}

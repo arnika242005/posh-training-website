@@ -1,34 +1,68 @@
 .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 80px 50px;
+    padding: 80px 24px;
     background-color: var(--color-primary-dark);
     color: var(--color-white);
+    /* Performance Boost: Tells browser this is a single rendering block */
+    contain: content; 
 }
 
-.hero-section h1 {
-    font-size: 3rem;
+.hero-content {
+    max-width: 800px;
+    /* Quick fade-in only (no movement) to fix LCP lag */
+    animation: quickFade 0.2s ease-out forwards;
+}
+
+.hero-title {
+    /* Responsive font: big on desktop, readable on mobile */
+    font-size: clamp(2rem, 5vw, 3.5rem); 
     margin-bottom: 20px;
     line-height: 1.2;
+    font-weight: 800;
 }
 
-.hero-section p {
-    font-size: 1.2rem;
-    max-width: 650px;
-    margin: 0 auto 30px auto;
+.hero-description {
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
     opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
+    display: inline-block;
     background-color: var(--color-accent-cta);
-    padding: 12px 28px;
-    border-radius: 6px;
+    padding: 16px 32px;
+    border-radius: 8px;
     color: var(--color-primary-dark);
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
-    transition: 0.3s ease;
+    /* transition transform is faster than animating 'top' or 'margin' */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    border: none;
 }
 
 .hero-btn:hover {
-    transform: scale(1.05);
-    background-color: #c09255;
+    transform: scale(1.03);
+    background-color: #d4a76a; /* Slightly lighter gold */
+}
+
+/* SIMPLE ANIMATION - Fixes the 7s delay */
+@keyframes quickFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 20px;
+    }
 }
