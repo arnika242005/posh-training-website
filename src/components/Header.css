@@ -1,0 +1,41 @@
+/* src/components/Header.css */
+
+.posh-header {
+    background-color: var(--color-primary-dark); /* Dark Olive Green */
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px; /* Spacing for a professional look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.nav-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent-cta); /* Soft Gold hover effect */
+}
+
+/* Styling the 'Book Session' link using the Soft Gold accent */
+.cta-link {
+    background-color: var(--color-accent-cta);
+    color: var(--color-primary-dark) !important; /* Forces Dark Olive Green text on Soft Gold background */
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.cta-link:hover {
+    background-color: #C39262; /* Slightly darker gold on hover for feedback */
+}
