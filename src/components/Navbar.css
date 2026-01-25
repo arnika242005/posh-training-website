@@ -1,56 +1,82 @@
+/* --- Global Navbar Styles --- */
 .navbar {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: var(--color-primary-dark); /* Dark Olive Green */
-    color: var(--color-white);
-    
-    /* THE FIX: Use space-between to push logo left and links right */
+    background-color: #2e3b2e; /* Your Dark Olive Green */
+    color: #ffffff;
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    
-    /* Adjusted padding for balanced side spacing */
     padding: 15px 60px; 
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    
-    /* Ensures padding doesn't cause overflow */
     box-sizing: border-box; 
 }
 
 .navbar-logo {
     font-size: 1.4rem;
     font-weight: bold;
-    color: var(--color-white);
+    color: #ffffff;
     white-space: nowrap;
 }
 
 .navbar-links {
     display: flex;
-    /* Controls spacing between individual links */
-    gap: 150px; 
+    /* Use a smaller gap for desktop to prevent overflow */
+    gap: 40px; 
 }
 
 .nav-item {
-    color: var(--color-white);
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease;
+    white-space: nowrap; /* Prevents single words from breaking */
 }
 
 .nav-item:hover {
-    color: var(--color-accent-cta); /* Gold hover */
+    color: #d4af37; /* Gold hover */
     transform: translateY(-1px);
 }
 
-/* RESPONSIVE: Prevent crowding on smaller screens */
+/* --- Responsive Media Query for Tablets (992px and down) --- */
 @media (max-width: 992px) {
     .navbar {
         padding: 15px 30px;
     }
     .navbar-links {
         gap: 20px;
+    }
+}
+
+/* --- THE MOBILE FIX: Responsive Media Query for Phones (768px and down) --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stacks logo above the links */
+        padding: 15px 10px;
+        gap: 15px; /* Adds space between logo and the link row */
+    }
+
+    .navbar-logo {
+        font-size: 1.2rem;
+    }
+
+    .navbar-links {
+        gap: 12px; /* Tight gap to fit all 4 links horizontally */
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap; /* Safety: wraps links if the screen is super narrow */
+    }
+
+    .nav-item {
+        font-size: 0.85rem; /* Smaller text specifically for mobile */
+    }
+
+    .help-link {
+        border: 1px solid #d4af37; /* Optional: makes the help link stand out on mobile */
+        padding: 4px 8px;
+        border-radius: 4px;
     }
 }
