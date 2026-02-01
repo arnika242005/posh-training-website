@@ -7,7 +7,7 @@ const Navbar = () => {
         <header className="navbar">
             <div className="navbar-logo">
                 <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    POSH Training Expert
+                    POSH Advisory
                 </Link>
             </div>
 
