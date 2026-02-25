@@ -7,7 +7,7 @@ export default function TrainingModules() {
     {
       id: "01",
       title: "Policy Design and Review",
-      desc: "Drafting custom PoSH policies, outlining roles, and establishing governance mechanisms.",
+      desc: "Drafting custom POSH policies, outlining roles, and establishing governance mechanisms.",
       img: "/images/mod1.jpg",
       link: "/module/awareness"
     },
@@ -27,52 +27,45 @@ export default function TrainingModules() {
     },
     {
       id: "04",
-      title: "E-learning for Employees & Managers",
-      desc: "Flexible digital training solutions for large-scale awareness and compliance.",
-      img: "/images/mod4.jpg",
-      link: "/module/elearning"
-    },
-    {
-      id: "05",
       title: "External Member Services",
       desc: "Providing experienced External Members for impartial case investigations and legal guidance.",
       img: "/images/mod5.jpg",
       link: "/module/external-member"
     },
     {
-      id: "06",
+      id: "05",
       title: "Workshops for Teams",
       desc: "Specialized training for Employees, Managers, Leaders, and the Internal Committee.",
       img: "/images/caro3.jpg",
       link: "/module/workshops"
     },
     {
-      id: "07",
+      id: "06",
       title: "Activity-Based Learning",
       desc: "Impactful training through Roleplay, Theatre, and Real-Time Case Investigations.",
       img: "/images/module7.jpg", 
       link: "/module/activity-learning"
     },
     {
-      id: "08",
+      id: "07",
       title: "Regional Language Training",
-      desc: "Training available in English and Hindi.",
+      desc: "Training available in English, Hindi, Marathi and Kannada.",
       img: "/images/module8.jpg",
       link: "/module/regional-training"
     },
     {
-      id: "09",
+      id: "08",
       title: "Annual Report Filing",
       desc: "Assistance with mandatory annual compliance reporting and documentation.",
       img: "/images/module9.jpg",
       link: "/module/annual-report"
     },
     {
-      id: "10",
+      id: "09",
       title: "Employee Survey",
       desc: "Analyzing workplace safety and culture through structured feedback and sentiment analysis.",
       img: "/images/module10.jpg",
-      link: "/module/employee-survey" // ✅ FIXED: Now matches App.js route
+      link: "/module/employee-survey" 
     }
   ];
 
@@ -89,7 +82,6 @@ export default function TrainingModules() {
             key={mod.id}
             className={`training-item ${index % 2 === 1 ? "reverse" : ""}`}
           >
-            {/* TEXT */}
             <div className="training-text">
               <h3>{mod.id}. {mod.title}</h3>
               <p>{mod.desc}</p>
@@ -99,7 +91,6 @@ export default function TrainingModules() {
               </Link>
             </div>
 
-            {/* IMAGE */}
             <div className="training-image">
               <div className="shine"></div>
               <img src={mod.img} alt={mod.title} loading="lazy" />

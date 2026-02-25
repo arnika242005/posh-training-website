@@ -25,7 +25,7 @@ export default function TrainerSection() {
             <p>
               Ronette Rodricks is a seasoned POSH trainer and compliance expert
               with over <strong>15 years of experience</strong> in workplace
-              sensitization, legal awareness, and organizational compliance.
+              sensitization and organizational compliance.
             </p>
 
             <p>

@@ -7,7 +7,7 @@ export default function Workshops() {
   }, []);
 
   const handleEnquiry = () => {
-    const phoneNumber = "919819304104"; 
+    const phoneNumber = "918951291065"; 
     const email = "ronetterodricks@getstructured.in";
     const subject = "Enquiry: POSH Workshops for Teams";
     const body = "Hello, I would like to enquire about specialized POSH workshops for our Employees, Managers, and Leadership teams.";

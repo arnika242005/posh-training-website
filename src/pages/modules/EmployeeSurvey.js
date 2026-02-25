@@ -7,7 +7,7 @@ export default function EmployeeSurvey() {
   }, []);
 
   const handleEnquiry = () => {
-    const phoneNumber = "919819304104"; 
+    const phoneNumber = "918951291065"; 
     const email = "ronetterodricks@getstructured.in";
     const subject = "Enquiry: POSH Employee Culture Survey";
     const body = "Hello, I am interested in conducting an anonymous POSH employee survey.";

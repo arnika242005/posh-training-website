@@ -2,7 +2,7 @@
 .fade-up {
   opacity: 0;
   transform: translateY(50px);
-  transition: all 0.2s ease-out; /* Increased from 0.12s for a smoother feel */
+  transition: all 0.2s ease-out;
 }
 
 .fade-up.show {
@@ -14,10 +14,8 @@
 
 .why-choose-us {
   background: #ffffff;
-  /* Changed top padding from 0px to 60px to move content down slightly */
-  padding: 60px 0 80px; 
-  /* Added margin-top to ensure it doesn't hug the previous section */
-  margin-top: 20px; 
+  padding: 20px 0 20px; 
+  margin-top: 0px; 
   font-family: "Inter", sans-serif;
   text-align: center;
 }
@@ -37,21 +35,35 @@
 }
 
 .choose-heading {
-  font-size: 2.8rem; /* Slightly larger to match your screenshot style */
+  font-size: 2.8rem;
   font-weight: 800;
-  color: #1e3c2f; /* Matching your brand green from the modules */
+  color: #1e3c2f;
   margin-bottom: 50px;
 }
 
 .choose-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px 60px; /* Increased vertical gap between rows */
+  grid-template-columns: repeat(6, 1fr);
+  gap: 60px 60px;
   margin-top: 40px;
 }
 
 .choose-item {
   text-align: center;
+}
+
+.choose-item:nth-child(1),
+.choose-item:nth-child(2),
+.choose-item:nth-child(3) {
+  grid-column: span 2;
+}
+
+.choose-item:nth-child(4) {
+  grid-column: 2 / 4;
+}
+
+.choose-item:nth-child(5) {
+  grid-column: 4 / 6;
 }
 
 .number {
@@ -62,15 +74,15 @@
   align-items: center;
   gap: 12px;
   justify-content: center;
-  margin-bottom: 15px; /* Added space below the number line */
+  margin-bottom: 15px;
 }
 
 .number::before,
 .number::after {
   content: "";
   height: 1px;
-  flex-grow: 1; /* Makes lines adapt better to container width */
-  max-width: 100px; /* Prevents lines from being too long */
+  flex-grow: 1;
+  max-width: 100px;
   background: #c7d1e2;
 }
 
@@ -85,9 +97,9 @@
   font-size: 0.95rem;
   font-weight: 500;
   font-style: italic;
-  color: #bc8e5c; /* Slightly deeper gold for better readability on white */
+  color: #bc8e5c;
   line-height: 1.6;
-  max-width: 280px; /* Keeps text chunks clean and balanced */
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -97,7 +109,12 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+  
+  .choose-item:nth-child(n) {
+    grid-column: span 1;
+  }
+  
   .why-choose-us {
-      padding: 40px 0;
+      padding: 40px 0 20px;
   }
 }

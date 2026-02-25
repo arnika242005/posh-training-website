@@ -7,7 +7,7 @@ export default function ELearning() {
   }, []);
 
   const handleEnquiry = () => {
-    const phoneNumber = "919819304104"; 
+    const phoneNumber = "918951291065"; 
     const email = "ronetterodricks@getstructured.in";
     const subject = "Enquiry: POSH E-learning Solutions";
     const body = "Hello, I would like to enquire about your digital POSH training and E-learning modules.";

@@ -7,7 +7,7 @@ export default function AnnualReport() {
   }, []);
 
   const handleEnquiry = () => {
-    const phoneNumber = "919819304104"; 
+    const phoneNumber = "918951291065"; 
     const email = "ronetterodricks@getstructured.in";
     const subject = "Enquiry: POSH Annual Report Filing Support";
     const body = "Hello, I need assistance with compiling and filing our POSH Annual Report for the current calendar year.";
@@ -31,7 +31,7 @@ export default function AnnualReport() {
             and timely submission of your organization's POSH Annual Report.
           </p>
           <div className="module-meta">
-            <span>📅 Jan 31st Deadline</span>
+            <span>📅 Deadline: 31st January</span>
             <span>📑 Statutory Filing</span>
             <span>✅ Compliance Audit</span>
           </div>
@@ -45,20 +45,20 @@ export default function AnnualReport() {
           <div className="content-card">
             <h2>Report Compilation</h2>
             <ul>
-              <li>Consolidating the number of complaints received and resolved</li>
-              <li>Documenting all awareness programs and IC workshops held</li>
-              <li>Tracking cases pending for more than 90 days with reasons</li>
-              <li>Summarizing actions taken by the employer or District Officer</li>
+              <li>Consolidating the number of complaints received and resolved.</li>
+              <li>Documenting all awareness programs and IC workshops held.</li>
+              <li>Tracking cases pending for more than 90 days with reasons.</li>
+              <li>Summarizing actions taken by the employer or District Officer.</li>
             </ul>
           </div>
 
           <div className="content-card">
             <h2>Statutory Submission</h2>
             <ul>
-              <li>Identifying the correct District Officer/Local Authority for filing</li>
-              <li>Ensuring the report is submitted on the organization's letterhead</li>
-              <li>Coordinating with HR for the "Director's Report" disclosure</li>
-              <li>Securing proof of submission for legal records</li>
+              <li>Identifying the correct District Officer/Local Authority for filing.</li>
+              <li>Ensuring the report is submitted on the organization's letterhead.</li>
+              <li>Coordinating with HR for the "Director's Report" disclosure.</li>
+              <li>Securing proof of submission for legal records.</li>
             </ul>
           </div>
 
@@ -67,20 +67,20 @@ export default function AnnualReport() {
           <div className="content-card">
             <h2>Compliance Audit</h2>
             <ul>
-              <li>Reviewing IC meeting minutes for the entire year</li>
-              <li>Verifying if the Internal Committee was properly constituted</li>
-              <li>Checking if statutory posters were displayed in all branches</li>
-              <li>Ensuring consistency between the Annual Report and financial audits</li>
+              <li>Reviewing IC meeting minutes for the entire year.</li>
+              <li>Verifying if the Internal Committee was properly constituted.</li>
+              <li>Checking if statutory posters were displayed in all branches.</li>
+              <li>Ensuring consistency between the Annual Report and financial audits.</li>
             </ul>
           </div>
 
           <div className="content-card">
             <h2>Strategic Advisory</h2>
             <ul>
-              <li>Analyzing year-on-year trends in workplace grievances</li>
-              <li>Recommendations for the upcoming year's training calendar</li>
-              <li>Drafting the "Nil Report" if no complaints were filed</li>
-              <li>Managing filings for multiple branch locations across India</li>
+              <li>Analyzing year-on-year trends in workplace grievances.</li>
+              <li>Recommendations for the upcoming year's training calendar.</li>
+              <li>Drafting the "Nil Report" if no complaints were filed.</li>
+              <li>Managing filings for multiple branch locations across India.</li>
             </ul>
           </div>
 

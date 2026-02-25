@@ -15,10 +15,8 @@ import EnquiryForm from "./components/EnquiryForm";
 import Footer from "./components/Footer";
 
 const PolicyDesign = lazy(() => import("./pages/modules/PolicyDesign"));
-const SupervisorTraining = lazy(() => import("./pages/modules/SupervisorTraining"));
 const ICTraining = lazy(() => import("./pages/modules/ICTraining"));
 const POSHAudit = lazy(() => import("./pages/modules/POSHAudit"));
-const ELearning = lazy(() => import("./pages/modules/ELearning"));
 const ExternalMember = lazy(() => import("./pages/modules/ExternalMember"));
 const Workshops = lazy(() => import("./pages/modules/Workshops"));
 const ActivityLearning = lazy(() => import("./pages/modules/ActivityLearning"));
@@ -26,10 +24,6 @@ const RegionalTraining = lazy(() => import("./pages/modules/RegionalTraining"));
 const AnnualReport = lazy(() => import("./pages/modules/AnnualReport"));
 const EmployeeSurvey = lazy(() => import("./pages/modules/EmployeeSurvey"));
 
-/**
- * HIGH-PERFORMANCE REVEAL: 
- * Triggers animations BEFORE they enter the viewport to eliminate the "pop-in" delay.
- */
 function ScrollRevealManager() {
   const { pathname } = useLocation();
 
@@ -42,15 +36,14 @@ function ScrollRevealManager() {
         }
       });
     }, { 
-      threshold: 0.01, // Trigger as soon as 1% is visible
-      rootMargin: "0px 0px 150px 0px" // CRITICAL: Triggers 150px BEFORE scrolling hits the section
+      threshold: 0.01,
+      rootMargin: "0px 0px 150px 0px" 
     });
 
     const triggerReveal = () => {
       const fadeElements = document.querySelectorAll(".fade-up");
       fadeElements.forEach(el => {
         const rect = el.getBoundingClientRect();
-        // If it's already on screen or very close, show immediately
         if (rect.top < window.innerHeight + 100) {
           el.classList.add("show");
         } else {
@@ -59,7 +52,6 @@ function ScrollRevealManager() {
       });
     };
 
-    // Run immediately on route change
     requestAnimationFrame(triggerReveal);
 
     return () => observer.disconnect();
@@ -100,11 +92,7 @@ function App() {
                 <CarouselSection />
                 <div id="about"><WhatIsPOSH /></div>
                 <div id="whychooseus" className="fade-up"><WhyChooseUs /></div>
-                
-                {/* Fixed: We move the fade-up class to the section wrapper inside the component usually, 
-                    but keeping it here for consistency with your previous code */}
                 <div id="training" className="fade-up"><TrainingModules /></div>
-                
                 <div className="fade-up" style={{ marginTop: "60px" }}><TrainerSection /></div>
                 <div id="testimonials" className="fade-up"><Testimonials /></div>
                 <div id="enquire" className="fade-up"><EnquiryForm /></div>
@@ -113,12 +101,9 @@ function App() {
             }
           />
 
-          {/* MODULE ROUTES */}
           <Route path="/module/awareness" element={<Layout><PolicyDesign /><Footer /></Layout>} />
-          <Route path="/module/supervisor" element={<Layout><SupervisorTraining /><Footer /></Layout>} />
           <Route path="/module/ic-training" element={<Layout><ICTraining /><Footer /></Layout>} />
           <Route path="/module/compliance-audit" element={<Layout><POSHAudit /><Footer /></Layout>} />
-          <Route path="/module/elearning" element={<Layout><ELearning /><Footer /></Layout>} />
           <Route path="/module/external-member" element={<Layout><ExternalMember /><Footer /></Layout>} />
           <Route path="/module/workshops" element={<Layout><Workshops /><Footer /></Layout>} />
           <Route path="/module/activity-learning" element={<Layout><ActivityLearning /><Footer /></Layout>} />

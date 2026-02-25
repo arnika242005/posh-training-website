@@ -5,33 +5,27 @@
 .ic-page {
   font-family: "Inter", sans-serif;
   color: #1e3c2f;
-  /* CHANGED: Set padding-top to 0 to remove the top white gap */
   margin-top: 0;
   padding-top: 0; 
   min-height: 100vh;
   background-color: #ffffff;
-  overflow-x: hidden;
 }
 
-/* Ensure no default browser margins on the hero section */
 .module-image-hero {
   position: relative;
   height: 500px;
   width: 100%;
   overflow: hidden;
-  margin-top: 0; /* Forced zero margin to snap to top */
-  margin-bottom: 60px;
+  margin-top: 0;
+  background-color: #1e3c2f; 
 }
-
-/* =========================
- IMAGE HERO SECTION
-========================= */
 
 .module-image-hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /* Removes tiny bottom alignment gap */
+  display: block;
+  filter: brightness(0.6);
 }
 
 /* HERO OVERLAY CONTENT */
@@ -40,15 +34,14 @@
   inset: 0;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.1), /* Slightly lighter at top */
+      rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.7)
   );
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* If your navbar is sticky/transparent, increase top padding here instead */
-  padding: 80px 60px 60px 60px; 
+  padding: 80px 10% 40px; 
   z-index: 2;
 }
 
@@ -59,15 +52,28 @@
   color: #ffffff;
 }
 
-/* ... (Remaining styles stay the same) ... */
+.image-overlay p {
+  font-size: 20px;
+  max-width: 700px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.module-meta {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
 .module-meta span {
-  background: rgba(255, 255, 255, 0.15); /* More transparent for modern look */
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
   padding: 10px 22px;
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: 500;
+  font-size: 14px;
 }
 
 /* =========================
@@ -76,7 +82,7 @@
 
 .module-content {
   max-width: 1100px;
-  margin: auto;
+  margin: 40px auto 0;
   padding: 0 20px 100px;
   display: flex;
   flex-direction: column;
@@ -89,20 +95,23 @@
   gap: 25px;
 }
 
-/* CONTENT CARDS */
+/* UPDATED: Permanent green border and lift effect */
 .content-card {
-  background: #ffffff; /* Pure white looks better against greyish body */
-  border: 1.5px solid #e0e6e3; /* Softer border than dark green */
+  background: #ffffff;
+  border: 1.5px solid #1e3c2f; 
   border-radius: 20px;
   padding: 35px;
-  transition: all 0.3s ease;
   height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .content-card:hover {
-  border-color: #1e3c2f; /* Dark green appears on hover */
-  box-shadow: 0 15px 35px rgba(30, 60, 47, 0.08);
   transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(30, 60, 47, 0.12);
+}
+
+.content-card.full-width {
+  grid-column: span 2;
 }
 
 .content-card h2 {
@@ -112,4 +121,52 @@
   font-weight: 700;
 }
 
-/* ... (Keep the rest of your CTA and Mobile styles) ... */
+.content-card ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.content-card li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.module-cta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.module-cta button {
+  background: #1e3c2f;
+  color: #fff;
+  padding: 18px 45px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.module-cta button:hover {
+  background: #156047;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .image-overlay {
+    padding: 60px 20px 20px;
+    text-align: center;
+  }
+  .module-meta {
+    justify-content: center;
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .content-card.full-width {
+    grid-column: span 1;
+  }
+}

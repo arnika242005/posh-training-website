@@ -7,7 +7,7 @@ export default function RegionalTraining() {
   }, []);
 
   const handleEnquiry = () => {
-    const phoneNumber = "919819304104"; 
+    const phoneNumber = "918951291065"; 
     const email = "ronetterodricks@getstructured.in";
     const subject = "Enquiry: POSH Training in Regional Languages";
     const body = "Hello, I am interested in POSH training sessions delivered in regional languages for our diverse workforce.";
@@ -46,7 +46,7 @@ export default function RegionalTraining() {
           <div className="content-card">
             <h2>Multilingual Delivery</h2>
             <ul>
-              <li>Training sessions available in Hindi and English</li>
+              <li>Training sessions available in English, Hindi, Marathi and Kannada</li>
               <li>Content adapted to local cultural nuances and contexts</li>
               <li>Expert trainers fluent in native languages</li>
               <li>Interactive Q&A sessions in the employees' preferred language</li>

@@ -4,17 +4,17 @@ import "./Footer.css";
 import { FaWhatsapp, FaEnvelope, FaPhoneAlt } from "react-icons/fa"; 
 
 const Footer = () => {
-    const whatsappLink = "https://wa.me/919819304104";
-    const phoneLink = "tel:+919819304104"; 
+    const whatsappLink = "https://wa.me/918951291065";
+    const phoneLink = "tel:+918951291065"; 
     // UPDATED EMAIL ADDRESS HERE
     const emailLink = "mailto:ronetterodricks@getstructured.in"; 
 
     const services = [
         { name: "Policy Design", path: "/module/awareness" },
         { name: "IC Training", path: "/module/ic-training" },
-        { name: "Supervisor Training", path: "/module/supervisor" },
+        //{ name: "Supervisor Training", path: "/module/supervisor" },
         { name: "Compliance Audit", path: "/module/compliance-audit" },
-        { name: "E-Learning", path: "/module/elearning" },
+        //{ name: "E-Learning", path: "/module/elearning" },
         { name: "External Member", path: "/module/external-member" },
         { name: "Workshops", path: "/module/workshops" },
         { name: "Activity Learning", path: "/module/activity-learning" },

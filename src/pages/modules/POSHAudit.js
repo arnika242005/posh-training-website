@@ -9,7 +9,7 @@ export default function POSHAudit() {
 
   // ✅ Unified Enquiry Function (WhatsApp + Email)
   const handleEnquiry = () => {
-    const phoneNumber = "919819304104"; 
+    const phoneNumber = "918951291065"; 
     const email = "ronetterodricks@getstructured.in";
     const subject = "Enquiry: POSH Audits & Assessments";
     const body = "Hello, I would like to enquire about your POSH Audit and Workplace Assessment services to evaluate our compliance status.";
@@ -50,21 +50,21 @@ export default function POSHAudit() {
           <div className="audit-card">
             <h2>What This Audit Covers</h2>
             <ul>
-              <li>Review of POSH policy and internal procedures</li>
-              <li>Evaluation of Internal Committee (IC) constitution</li>
-              <li>Assessment of complaint handling process</li>
-              <li>Training records and awareness initiatives</li>
-              <li>Documentation and statutory compliance check</li>
+              <li>Review of POSH policy and internal procedures.</li>
+              <li>Evaluation of Internal Committee (IC) constitution.</li>
+              <li>Assessment of complaint handling process.</li>
+              <li>Training records and awareness initiatives.</li>
+              <li>Documentation and statutory compliance check.</li>
             </ul>
           </div>
 
           <div className="audit-card">
             <h2>Who Should Participate</h2>
             <ul>
-              <li>HR and Compliance teams</li>
-              <li>Internal Committee members</li>
-              <li>Senior management</li>
-              <li>Legal and risk management teams</li>
+              <li>HR and Compliance teams.</li>
+              <li>Internal Committee members.</li>
+              <li>Senior management.</li>
+              <li>Legal and risk management teams.</li>
             </ul>
           </div>
 
@@ -73,20 +73,20 @@ export default function POSHAudit() {
           <div className="audit-card">
             <h2>Audit Methodology</h2>
             <ul>
-              <li>Document and policy review</li>
-              <li>Structured compliance checklist</li>
-              <li>One-on-one discussions with stakeholders</li>
-              <li>Gap analysis and risk identification</li>
+              <li>Document and policy review.</li>
+              <li>Structured compliance checklist.</li>
+              <li>One-on-one discussions with stakeholders.</li>
+              <li>Gap analysis and risk identification.</li>
             </ul>
           </div>
 
           <div className="audit-card">
             <h2>Key Outcomes</h2>
             <ul>
-              <li>Clear understanding of compliance gaps</li>
-              <li>Actionable recommendations for improvement</li>
-              <li>Improved legal readiness and risk mitigation</li>
-              <li>Reduced compliance and reputational risks</li>
+              <li>Clear understanding of compliance gaps.</li>
+              <li>Actionable recommendations for improvement.</li>
+              <li>Improved legal readiness and risk mitigation.</li>
+              <li>Reduced compliance and reputational risks.</li>
             </ul>
           </div>
 
