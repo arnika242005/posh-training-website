@@ -34,11 +34,10 @@ export default function Testimonials() {
 
           <div className="testimonial-card">
             <p className="testimonial-text">
-              “A well-structured POSH workshop with real-life scenarios.
-              Perfect balance of law, awareness, and practical guidance.”
+              “Thankyou for conducting the POSH session for our team today. We truly appreciate the effort you put into delivering such an informative and engaging session. It was very insightful and helped enhance our understanding of important workplace practices and guidelines.”
             </p>
-            <h4 className="testimonial-name">Faculty Coordinator</h4>
-            <span className="testimonial-org">Educational Institution</span>
+            <h4 className="testimonial-name">Nisha Kapoor</h4>
+            <span className="testimonial-org">HR Manager, Synergetics IT Services India Pvt. Ltd</span>
           </div>
 
           <div className="testimonial-card">
