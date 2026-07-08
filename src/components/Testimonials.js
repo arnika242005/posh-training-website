@@ -26,11 +26,10 @@ export default function Testimonials() {
 
           <div className="testimonial-card">
             <p className="testimonial-text">
-              “Ronette Rodricks brings clarity and empathy to sensitive topics.
-              The session helped our Internal Committee function more confidently.”
+              “Ronette conducted the POSH training for close to 60 employees at 21 Knots as part of our bi-annual refresher program. The session was crisp, to the point, and thoughtfully designed with relevant examples, engaging videos, and real-life experiences. Given our diverse group, including minority women, it was crucial for the training to foster awareness and reinforce a safe and inclusive work environment. Ronette’s approach resonated strongly with the participants and truly hit the mark.”
             </p>
-            <h4 className="testimonial-name">IC Presiding Officer</h4>
-            <span className="testimonial-org">Manufacturing Company</span>
+            <h4 className="testimonial-name">Priya</h4>
+            <span className="testimonial-org">COO, 21Knots</span>
           </div>
 
           <div className="testimonial-card">
